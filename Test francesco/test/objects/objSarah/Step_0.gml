@@ -31,3 +31,14 @@ walkSpeed = 3.5;
 if(keyboard_check(vk_shift)){
 walkSpeed = 7
 }
+
+
+if(place_meeting(x,y,weapon)){
+weapons = true;
+}
+
+
+if(keyboard_check(ord("A")) && weapons == true ){
+	instance_create_layer(x,y,"Instances_1",object4);
+
+}
